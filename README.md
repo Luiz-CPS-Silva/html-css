@@ -3,7 +3,9 @@
 
 Estou aprendendo a criar site e agora vou gerenciar meus repositórios!
 
+theme: minima
 
+remote_theme: benalter/retlab
 
 
 
