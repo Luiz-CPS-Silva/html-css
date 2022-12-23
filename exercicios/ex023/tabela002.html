@@ -13,15 +13,37 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        } 
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
         }
 
         td.num {
@@ -34,20 +56,28 @@
     <!--
         ANATOMIA PARA TABELAS GRANDE
         TABLE
-            THEAD
-                TR,TD,TH
-            TBODY
-                TR,TD,TD
-            TFOOT
-                TR,TD,TH
+            CAPTION
+                THEAD
+                    TR,TD,TH
+                 TBODY
+                    TR,TD,TD
+                TFOOT
+                    TR,TD,TH
     -->
     <table>
+        <caption>Populacao das unidades ferativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th >População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 55px;">População</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>214,000,000</strong></td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
                 <td>São Paulo</d>
@@ -154,12 +184,14 @@
                 <td class="num">450 479</td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>214,000,000</strong></td>
-            </tr>
-        </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam asperiores qui placeat voluptate id rem temporibus sapiente, ducimus consequuntur nostrum? Magnam sit corporis aliquid sed recusandae facilis sapiente at illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nostrum unde repudiandae amet veritatis ullam aut quos nemo architecto cupiditate perferendis nulla odit, molestias rem eos? Officia omnis fugiat Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate a voluptatibus dignissimos similique culpa soluta at magnam, quaerat, porro suscipit, maxime incidunt harum nostrum nihil earum deleniti! At, reiciendis commodi.</p>
 </body>
 </html>
